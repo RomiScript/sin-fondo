@@ -10,7 +10,7 @@ const MenuBar = () => {
             <div className="flex items-center space-x-2">
                 <img src={assets.logo} alt="" className="h-8 w-8 object-contain cursor-pointer" />
                 <span className="text-2xl font-semibold text-blue-400 cursor-ponter">
-                    sin.<span className="text-red-500 cursor-pointer">fondo</span>
+                    bg.<span className="text-red-500 cursor-pointer">cleaner</span>
                 </span>
             </div>
 
@@ -19,7 +19,7 @@ const MenuBar = () => {
                 <button className="text-gray-700 hover:text-blue-500 font-medium">
                     Iniciar Sesión
                 </button>
-                <button className="bg-gray-100 hover:bg-red-200 text-gray-700 font-medium px-4 py-2 rounded-full transition-all">Crear Cuenta</button>
+                <button className="bg-gray-100 hover:bg-red-200 text-gray-700 font-medium px-4 py-2 rounded-full transition-all">Registro</button>
             </div>
             {/*Hamburguesa mobile | Mobile hamburguer*/}
             <div className="flex md:hidden">
@@ -27,6 +27,13 @@ const MenuBar = () => {
                     {menuOpen ? <X size={28}/> : <Menu size={28} />}
                 </button>
             </div>
+            {/* Menú mobile | Mobile Menú*/}
+            {menuOpen && (
+                <div className="absolute top-16 right-8 bg-white shadow-md rounded-md flex flex-col space-y-4 p-4 w-40">
+                    <button className="text-gray-700 hover:text-blue-500 font-medium">Iniciar Sesión</button>
+                    <button className="bg-gray-100 hover:bg-red-200 text-gray-700 font-medium px-4 py-2 rounded-full text-center">Registro</button>
+                </div>
+            )}
         </nav>
     )
 }
