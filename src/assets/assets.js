@@ -2,6 +2,7 @@ import logo from './eraser.png'
 import Banner from './hero1.mp4'
 import people from './people.png'
 import people_org from './people-org.png'
+import { url } from 'inspector'
 
 
 
@@ -75,6 +76,25 @@ export const testimonials = [
      quote: "Es muy difícil encontrar un removedor de fondo que no le quite calidad a nuestras imágenes, definitivamente Clean es la mejor opción del mercado",
      author: "Bruno Marte",
      handle: "@_codigoya"
-    }
+    },
 
+];
+export const footer_constants = [
+    {
+        url:"https://facebook.com",
+        logo:"https//img.icons8.com/fluent/30/000000/facebook-new.png"
+
+    },
+    {
+        url:"https://linkedin.com",
+        logo:"https://img.icons8.com/fluent/30/000000/linkedin-2.png"
+    },
+    {
+        url:"https://twitter.com",
+        logo:"https://img.icons8.com/fluent/30/000000/twitter.png"
+    },
+    {
+        url:"https://instagram.com",
+        logo:"https://img.icons-8.com/fluent/30/000000/instagram-new.png"
+    }
 ]

@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 import Steps from "../Components/Steps"
 import Pricing from "../Components/Pricing";
 import Testimonials from "../Components/Testimonials";
+import TryNow  from "../Components/TryNow";
 
  const Home = () => {
     return (
@@ -25,6 +26,7 @@ import Testimonials from "../Components/Testimonials";
             <Testimonials />
 
             {/*Probar ahora | Try Now*/}
+            <TryNow />
         </div>
         
     )
